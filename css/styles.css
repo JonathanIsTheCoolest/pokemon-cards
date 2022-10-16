@@ -1,0 +1,216 @@
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--nav-background-color);
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+.poke-logo-container { max-width: 200px; }
+
+.poke-logo-container img { 
+  width: 100%; 
+  object-fit: cover;
+  background-color: var(--background-color);
+  border-radius: 65px;
+}
+
+.ul-one a,
+.ul-two a { 
+  color: var(--navbar-font-color); 
+  transition: 0.5s;
+}
+
+.ul-one a:hover,
+.ul-two a:hover { 
+  color: var(--navbar-font-hover);
+}
+
+.ul-one { 
+  margin-right: auto; 
+}
+
+.ul-two,
+ul-one { 
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.ul-two li { margin-right: 1rem; }
+
+/* Section One */
+
+.s-one {
+  position: relative;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+}
+
+.s-one,
+.s-two {
+  border: 1px solid transparent;
+  text-align: center;
+  width: 90%;
+}
+
+.arrow-container { position: relative; }
+
+.s-one h2,
+.s-two h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  -webkit-text-stroke: 3px black;
+  color: var(--card-font-color);
+  text-shadow: 0px 5px 10px #000;
+}
+
+.sort-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sort-container .sort-button {
+  margin: 0 1rem;
+  border: 1px outset rgb(0 0 0 / 0%);
+  background: var(--btn-color);
+  padding: 1rem;
+  border-radius: 25px;
+  color: var(--btn-font-color);
+  cursor: pointer;
+  box-shadow: 0 0 2px black;
+}
+
+.all-cards-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  margin: 1rem;
+  min-width: 200px;
+  min-height: 275px;
+  border: 10px solid var(--card-font-color);
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  box-shadow: 10px 0 20px -5px rgba(0, 0, 0, 0.8),
+              0 10px 20px -5px rgba(0, 0, 0, 0.8),
+              -10px 0 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card .poke-type-container {
+  position: absolute;
+  display: inline-flex;
+  font-size: 10px;
+  top: 1px;
+  right: 0;
+}
+
+.card .poke-type-container .poke-type {
+  margin-right: 5px;
+}
+
+.card h3 {
+  text-align: left;
+  padding-left: 0.8rem;
+  font-size: 0.9375rem;
+}
+
+.card .like-button-container,
+.card .unlike-button-container {
+  font-size: 30px;
+  transition: 0.5s;
+  color: var(--card-font-color);
+}
+
+.card .like-button-container:hover,
+.card .unlike-button-container:hover {
+  cursor: pointer;
+  color: var(--card-font-hover);
+}
+
+.card .like-button-container {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.card .unlike-button-container {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.card .card-image-container {
+  border: 5px outset var(--card-font-color);
+  max-width: 9.75rem; 
+  margin-top: 0.15rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 20px 0 20px -12px rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+
+.card .card-image-container img {
+  width: 60%;
+  height: 6.25rem;
+}
+
+.s-two {
+  position: absolute;
+  top: 100%;
+}
+
+.outer-poke-type-counter-container {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-text-stroke: 1px var(--card-font-color);
+  color: black;
+  text-shadow: 0px 0px 100px #000;
+}
+
+.inner-poke-type-counter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.inner-poke-type-counter-container .type-container {
+  -webkit-text-stroke: initial;
+  text-shadow: none;
+  font-size: 1rem;
+  margin: 2rem 1rem 0.5rem;
+}
+
+.type-container h4 {
+  color: #2a75bb;
+}
+
+.type-container div {
+  color: #FB1B1B;
+}

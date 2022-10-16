@@ -1,0 +1,32 @@
+:root {
+  --navbar-font-color: grey;
+  --navbar-font-hover: darkblue;
+  --font-color: black;
+  --nav-background-color: whitesmoke;
+  --background-color: white;
+  --btn-color: navy;
+  --btn-font-color: whitesmoke;
+  --card-font-hover: #FB1B1B;
+  --card-font-color: #ffcb05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {min-width: 280px;}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+}

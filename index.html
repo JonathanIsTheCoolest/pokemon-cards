@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Module Eight Fetching and Displaying Data form an API</title>
+    <meta name="Module Eight Fetching and Displaying Data form an API" content="Module Eight Fetching and Displaying Data form an API">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c4bd325b88.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="ul-one">
+        <li>
+          <div class="poke-logo-container">
+            <img src="assets/images/pokemon-logo.png" alt="Pokemon Logo">
+          </div>
+        </li>
+      </ul>
+      <ul class="ul-two">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://pokeapi.co/">Pokemon API</a></li>
+      </ul>
+    </div>
+    <main>
+      <div class="container">
+        <section class="s-one">
+          <h2>Card Collection</h2>
+          <div id="sortContainerButtons" class="sort-container">
+            <div class="sort-button" data-sort="a-z-one">
+              <div>Sort A-Z</div>
+            </div>
+            <div class="sort-button" data-sort="z-a-one">
+              <div>Sort Z-A</div>
+            </div>
+          </div>
+          <div id="collection" class="all-cards-collection">
+          </div>
+          <div class="outer-poke-type-counter-container">
+            <h3>Pokemon Collection Type Counter</h3>
+            <div id="counterContainerCollection" class="inner-poke-type-counter-container">
+            </div>
+          </div>
+        </section>
+        <section class="s-two">
+          <h2>Favorite Card Collection</h2>
+          <div id="sortFavButtons" class="sort-container">
+            <div class="sort-button" data-sort="a-z-two">
+              <div>Sort A-Z</div>
+            </div>
+            <div class="sort-button" data-sort="z-a-two">
+              <div>Sort Z-A</div>
+            </div>
+          </div>
+          <div id="favorite" class="all-cards-collection">
+          </div>
+          <div class="outer-poke-type-counter-container">
+            <h3>Pokemon Favorite Type Counter</h3>
+            <div id="counterContainerFavorites" class="inner-poke-type-counter-container">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="js/main.js" async defer></script>
+  </body>
+</html>
